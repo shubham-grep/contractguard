@@ -281,4 +281,4 @@ An unsupported or ambiguous case must return a stable diagnostic with its locati
 
 | Version | Date | Status | Change |
 | --- | --- | --- | --- |
-| `0.1.0-draft.1` | 2026-07-19 | Draft | Initial catalog containing 15 high-confidence rules. |
+| `0.1.0-draft.1` | 2026-07-20 | Draft | Initial catalog containing 15 high-confidence rules. |
