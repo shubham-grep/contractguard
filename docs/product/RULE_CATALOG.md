@@ -13,7 +13,7 @@
 
 This catalog defines ContractGuard's initial deterministic compatibility policy. The [OpenAPI 3.0.4 specification](https://spec.openapis.org/oas/v3.0.4.html) and [OpenAPI 3.1.2 specification](https://spec.openapis.org/oas/v3.1.2.html) define document semantics; they do not define a universal meaning of “breaking change.” The classifications below are therefore ContractGuard policy for an existing consumer moving from the baseline API to the candidate API.
 
-A `breaking` finding means the isolated change can invalidate a request previously allowed, remove a documented capability or guarantee, or require authorization an existing consumer did not need. A `non-breaking` finding means the isolated change preserves existing consumer behavior under the stated guards. It is not a guarantee that the entire candidate implementation is compatible.
+A `breaking` finding means the isolated change can invalidate a request previously allowed, remove a documented capability or guarantee, or require authorization an existing consumer did not need. A `non-breaking` finding means the isolated change preserves existing consumer behavior under the stated guards. It is not a guarantee that the entire candidate implementation is compatible because line by line checking and syntax version matching is not performed.
 
 ## Applicability and Comparison Model
 
@@ -281,4 +281,4 @@ An unsupported or ambiguous case must return a stable diagnostic with its locati
 
 | Version | Date | Status | Change |
 | --- | --- | --- | --- |
-| `0.1.0-draft.1` | 2026-07-20 | Draft | Initial catalog containing 15 high-confidence rules. |
+| `0.1.0-draft.1` | 2026-07-22 | Draft | Initial catalog containing 15 high-confidence rules. |
